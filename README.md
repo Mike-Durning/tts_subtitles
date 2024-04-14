@@ -4,4 +4,4 @@ The goal is project is to build on top of using Piper‘s text to speech & whisp
 
 
 ## How to use:
-[Video Title](https://youtu.be/cY7j3kmmIV0)
+[Video Tutorial](https://youtu.be/cY7j3kmmIV0)
