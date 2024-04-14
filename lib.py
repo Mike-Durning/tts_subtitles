@@ -295,29 +295,5 @@ class Config:
                 if file.endswith(".wav"):
                     file_path = os.path.join(root, file)
                     duration = get_wav_duration(file_path)  
-                                   
-                                       
-    def save_xlsx(self, wb, search_list_format_info):
-            todays_date = search_list_format_info["date"]
-            file_type = search_list_format_info["file_type"]
-            search_list = search_list_format_info["format"]
-            client_name = search_list_format_info["client_name"]
-            download_directory = search_list_format_info["custom_directory"]
-
-            filename_save = f"{client_name} {search_list} {todays_date}{file_type}"
-            
-            if download_directory is None:
-                download_directory = askdirectory(title="Select Client Folder")
-
-            folder_path = Path(download_directory)
-            
-                
-            file_path = folder_path / filename_save
-            wb.save(file_path)
-            wb.close()
-
-
-            os.startfile(file_path)
-            #os.startfile(folder_path)
-            
+'''            
             '''
